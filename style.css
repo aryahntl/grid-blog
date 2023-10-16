@@ -1,0 +1,113 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100%;
+    background-color: beige;
+}
+.container{
+    width: 95%;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.header-container{
+    margin: 2rem;
+}
+.header-title{
+    margin-bottom: 1rem;
+    fornt-size:1.7em;
+    line-height: 2rem;  
+    font-weight: 700;
+    text-align: center;  
+}
+.header-disc{
+    max-width: 55%;
+    text-align: center;
+    color: rgb(36, 33, 33);
+    margin: auto;
+}
+.main-container{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns:repeat(4,1fr);
+    max-width: 85%;
+    margin: auto;
+}
+.card-container{
+    display:flex;
+    flex-direction : column;
+    border: 2px solid rgb(112, 102, 102);
+    border-radius: 10px;
+}
+.card-img-container{
+    position: relative;
+    overflow: hidden;
+    height: 9rem;
+    border-radius: 8px 8px 0px 0px;
+}
+.card-img{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    /* height: 100%; */
+    width: 100%;
+}
+.card-details-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0.6rem;
+}
+.card-container:hover .card-img{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+.card-title{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: rgb(43, 39, 39);
+    margin-bottom: 0.6rem;
+}
+.card-title:hover {
+    color:blue;
+}
+.card-disc{
+    color: rgb(34, 32, 32);
+    font-size: 1rem;
+}
+.card-footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.author-container{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+}
+.author-info-container{
+    display: flex;
+    flex-direction: column;
+}
+.author-avtar-container{
+    width: 2rem;
+}
+.card-tag-container{
+    border: 1px solid black ;
+    border-radius: 5px;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+    margin: 0 2rem 0 2rem;
+}
